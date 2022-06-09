@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  /* In hex per the design */
+  --dark-blue: #5175FF;
+  --light-blue: #829CFF;
+  --dark-black: #25293A;
+  --light-black: #333950;
+  --grey: #747B95;
+  --pinkish: #F05B5B;
+  /* RGB conversion for use with opacity */
+  --dark-blue-rgb: 81, 117, 255;
+  --light-blue-rgb: 130, 156, 255;
+  --dark-black-rgb: 37, 41, 58;
+  --light-black-rgb: 51, 57, 80;
+  --grey-rgb: 116, 123, 149;
+  --pinkish-rgb: 240, 91, 91;
+}
+
+html {
+  font-size: 16px;
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 3.5rem;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+h3 {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+body {
+
+}
+
+.btn {
+  text-decoration: none;
+  padding-block: 1.12rem;
+  padding-inline: 3.4rem;
+  border-radius: 1.75rem;
+  font-weight: 700;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: var(--dark-blue);
+}
+
+.btn-primary:hover {
+  background-color: var(--light-blue);
+}
+
+.btn-secondary {
+  color: var(--dark-blue);
+  background-color: rgba(var(--dark-blue-rgb), 0.15);
+}
+
+.btn-secondary:hover {
+  background-color: rgba(var(--dark-blue-rgb), 0.25);
+}
+
+.btn-inverse {
+  color: var(--dark-blue);
+  background-color: #fff;
+}
+
+.btn-inverse:hover {
+  color: var(--light-blue);
+}
