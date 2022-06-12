@@ -18,7 +18,7 @@
         <img src="assets/shared/logo.svg" alt="" srcset="">
       </div>
       <section class="hero-flex">
-        <div class="main-copy">
+        <div class="hero-copy">
           <h1>A simple solution to complex tasks is coming soon</h1>
           <p>Say goodbye to inefficient juggling of multiple apps, teams, and projects. Officelite is the new 
             collaboration platform built with an intuitive interface to improve productivity.</p>
@@ -29,44 +29,67 @@
         </div>
       </section>
     </header>
-  
-      
-    
-      Get Started
-    
-      Basic
-      Free
-      Up to 5 users for free
-      Basic document collaboration
-      2 gb storage
-      Great security and support
-      Try for Free
-    
-      Pro
-      $9.99
-      Per user, billed monthly
-      All essential integrations
-      50 gb storage
-      More control and insights
-      Try for Free
-    
-      Ultimate
-      $19.99
-      Per user, billed monthly
-      Robust work management
-      100 gb storage
-      VIP support
-      Try for Free
-    
-      <!-- If you're choosing to make this date dynamic, set it to 30 days in the future from the moment the visitor views the page -->
-      Coming 4 Nov 2020
-    
-      <!-- If you're choosing to make this timer dynamic, have it countdown from the date you set above -->
-      47 Days
-      07 Hours
-      56 Min
-      14 Sec
-      Get Started
+    <main>
+      <div class="card-container">
+        <div class="card-container-flex">
+          <div class="card pricing-flex">
+            <h2>Basic</h2>
+            <h4>Free</h4>
+            <p id="user-info">Up to 5 users for free</p>
+            <p>Basic document collaboration</p>
+            <p>2 gb storage</p>
+            <p>Great security and support</p>
+            <a href="#" class="btn btn-secondary">Try for Free</a>
+          </div>
+          <div class="card pricing-flex card-inverse">
+            <h2>Pro</h2>
+            <h4>$9.99</h4>
+            <p id="user-info">Per user, billed monthly</p>
+            <p>All essential integrations</p>
+            <p>50 gb storage</p>
+            <p>More control and insights</p>
+            <a href="#" class="btn btn-inverse">Try for Free</a>
+          </div>
+          <div class="card pricing-flex">
+            <h2>Ultimate</h2>
+            <h4>$19.99</h4>
+            <p id="user-info">Per user, billed monthly</p>
+            <p>Robust work management</p>
+            <p>100 gb storage</p>
+            <p>VIP support</p>
+            <a href="#" class="btn btn-secondary">Try for Free</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-container">
+        <div class="footer-flex">
+        <!-- If you're choosing to make this date dynamic, set it to 30 days in the future from the moment the visitor views the page -->
+          <div class="countdown">
+            <h3>Coming <span id="launch-date" class="date">4 Nov 2020</span></h3>
+            <div id="days" class="time-element">
+              <h4>47</h4>
+              <p>days</p>
+            </div>
+            <div id="hours" class="time-element">
+              <h4>07</h4>
+              <p>hours</p>
+            </div>
+            <div id="min" class="time-element">
+              <h4>56</h4>
+              <p>min</p>
+            </div>
+            <div id="sec" class="time-element">
+              <h4>14</h4>
+              <p>sec</p>
+            </div>
+          </div>
+          <!-- If you're choosing to make this timer dynamic, have it countdown from the date you set above -->
+          <div>
+            <a href="#" class="btn btn-primary">Get Started</a>
+          </div>
+        </div>
+      </div>
+    </main>
   </div>
 
   <script src="resources/js/index.js"></script>

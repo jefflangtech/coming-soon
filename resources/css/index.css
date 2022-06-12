@@ -40,8 +40,14 @@ h3 {
   text-transform: uppercase;
 }
 
+h4 {
+  font-weight: 700;
+  font-size: 3.5rem;
+}
+
 body {
   color: var(--grey);
+  background-color: #FAFAFA;
 }
 
 .body-container {
@@ -96,6 +102,7 @@ header {
   background-size: 79%;
   background-position-x: 45vw;
   background-position-y: -51vh;
+  margin-bottom: 6rem;
 }
 
 .hero-flex {
@@ -108,21 +115,153 @@ header {
   gap: 6rem;
 }
 
-.main-copy {
+.hero-copy {
   padding-bottom: 10rem;
   max-width: 540px;
 }
 
-.main-copy p {
+.hero-copy p {
   margin-block: 3rem;
   line-height: 1.5rem;
   font-size: 1.125rem;
 }
 
-.main-copy .btn {
+.hero-copy .btn {
   box-shadow: 0rem 1.25rem 1.5rem -0.75rem rgba(var(--grey-rgb), 0.65);
 }
 
 .infographic img {
   max-width: 30rem;
+}
+
+main {
+  position: relative;
+  background-color: var(--dark-black);
+  background-image: url("../../assets/home/bg-pattern-footer.svg");
+  background-repeat: no-repeat;
+  background-position-x: 114%;
+  background-position-y: 31%;
+  z-index: -1;
+}
+
+.card-container {
+  padding-inline: 10.3125rem;
+  position: relative;
+}
+
+.card-container::before {
+  background-color: #FAFAFA;
+  content: "";
+  margin: 0;
+  left: 0;
+  position: absolute;
+  width: 100vw;
+  height: 50%;
+  z-index: -1;
+}
+
+.card-container-flex {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+  max-width: 1110px;
+  margin-inline: auto;
+}
+
+.card {
+  padding-inline: 1rem;
+  padding-block:2.25rem;
+  background-color: #fff;
+  min-width: 20.5rem;
+  width: 33%;
+  border-radius: 1rem;
+}
+
+.pricing-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pricing-flex h2 {
+  color: var(--dark-black);
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+}
+
+.pricing-flex h4 {
+  color: var(--dark-black);
+  margin-bottom: 1.5rem;
+}
+
+#user-info {
+  color: var(--dark-black);
+  margin-bottom: 4.25rem;
+}
+
+.pricing-flex p {
+  margin-bottom: 1.75rem;
+}
+
+.pricing-flex a {
+  margin-top: 1rem;
+}
+
+.card-inverse {
+  color: #fff;
+  background-color: var(--dark-blue);
+  background-image: url("../../assets/home/bg-pattern-pricing.svg");
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+  background-position-y: 101%;
+}
+
+.card-inverse h2,
+.card-inverse h4, 
+.card-inverse #user-info {
+  color: #fff;
+}
+
+.footer-container {
+  padding-inline: 10.3125rem;
+}
+
+.footer-flex {
+  padding-block: 5.6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  max-width: 1110px;
+  margin-inline: auto;
+}
+
+.date {
+  color: var(--dark-blue);
+}
+
+.countdown h3 {
+  margin-bottom: 1rem;
+  letter-spacing: 0.3rem;
+}
+
+.time-element {
+  text-align: center;
+  background-color: var(--light-black);
+  padding-inline: 1rem;
+  padding-block: 1.5rem;
+  margin-right: 0.75rem;
+  border-radius: 1rem;
+  display: inline-block;
+  min-width: 100px;
+}
+
+.time-element h4 {
+  margin-bottom: 0.5rem;
+}
+
+.time-element p {
+  color: var(--grey);
+  font-weight: 700;
 }
