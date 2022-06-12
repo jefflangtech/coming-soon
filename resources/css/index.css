@@ -27,6 +27,7 @@ html {
 h1 {
   font-weight: 700;
   font-size: 3.5rem;
+  color: var(--light-black);
 }
 
 h2 {
@@ -40,7 +41,11 @@ h3 {
 }
 
 body {
+  color: var(--grey);
+}
 
+.body-container {
+  overflow: hidden;
 }
 
 .btn {
@@ -76,4 +81,48 @@ body {
 
 .btn-inverse:hover {
   color: var(--light-blue);
+}
+
+.logo {
+  padding-top: 4.25rem;
+  max-width: 1110px;
+  margin-inline: auto;
+}
+
+header {
+  padding-inline: 10.3125rem;
+  background-image: url("../../assets/home/bg-pattern-header.svg");
+  background-repeat: no-repeat;
+  background-size: 79%;
+  background-position-x: 45vw;
+  background-position-y: -51vh;
+}
+
+.hero-flex {
+  max-width: 1110px;
+  padding-top: 5rem;
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 6rem;
+}
+
+.main-copy {
+  padding-bottom: 10rem;
+  max-width: 540px;
+}
+
+.main-copy p {
+  margin-block: 3rem;
+  line-height: 1.5rem;
+  font-size: 1.125rem;
+}
+
+.main-copy .btn {
+  box-shadow: 0rem 1.25rem 1.5rem -0.75rem rgba(var(--grey-rgb), 0.65);
+}
+
+.infographic img {
+  max-width: 30rem;
 }
