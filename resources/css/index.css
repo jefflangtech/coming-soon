@@ -279,6 +279,94 @@ main {
   font-weight: 700;
 }
 
+/* Reorganizing the media queries */
+
+@media (max-width: 1375px) {
+  header,
+  .card-container,
+  .footer-container {
+    padding-inline: 9.5rem;
+  }
+  .hero-flex {
+    gap: 4rem;
+  }
+}
+
+@media (max-width: 1305px) {
+  header,
+  .card-container,
+  .footer-container {
+    padding-inline: 8rem;
+  }
+  .hero-flex {
+    gap: 4rem;
+  }
+  .hero-copy h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  header,
+  .card-container,
+  .footer-container {
+    padding-inline: 6.5rem;
+  }
+  .hero-flex {
+    gap: 3.5rem;
+  }
+  .hero-copy h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 1100px) {
+  header,
+  .card-container,
+  .footer-container {
+    padding-inline: 5rem;
+  }
+  .hero-copy {
+    padding-bottom: 7rem;
+  }
+  .hero-copy p {
+    font-size: 1rem;
+    margin-top: 2rem;
+  }
+  header,
+  .card-container,
+  .footer-container {
+    padding-inline: 5rem;
+  }
+  .hero-flex {
+    gap: 3.5rem;
+  }
+  .hero-copy h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 890px) {
+  header,
+  .card-container,
+  .footer-container {
+    padding-inline: 3rem;
+  }
+  .hero-copy {
+    padding-bottom: 5rem;
+  }
+  .hero-copy p {
+    font-size: 1rem;
+    margin-top: 2rem;
+  }
+  .hero-flex {
+    gap: 3.5rem;
+  }
+  .hero-copy h1 {
+    font-size: 2.5rem;
+  }
+}
+
 @media (max-width: 768px) {
   header {
     padding-inline: 2rem;
@@ -365,7 +453,9 @@ main {
   }
 }
 
-@media (max-width: 890px) {
+/* PREVIOUS MEDIA QUERIES BEFORE REORG */
+
+/* @media (max-width: 890px) {
   header,
   .card-container,
   .footer-container {
@@ -449,4 +539,4 @@ main {
   .hero-flex {
     gap: 4rem;
   }
-}
+} */
