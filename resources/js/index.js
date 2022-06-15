@@ -7,7 +7,7 @@ const dateNow = Date.now()
 
 const getLaunchDate = function(now) {
   const launchDate = new Date()
-  return launchDate.setTime(now + (1000 * 60 * 60 * 24 * 30))
+  return launchDate.setTime(now + (1000 * 60 * 60 * 24 * 1))
 }
 
 const setDateHtml = function(element, date) {
@@ -72,7 +72,7 @@ setTimerHtml(seconds, daysElem, hoursElem, minElem, secElem)
 
 const intervalID = setInterval(function() {
   seconds -= 1
-  if(seconds === 0) {
+  if(seconds <= 0) {
     clearInterval(intervalID)
   }
   setTimerHtml(seconds, daysElem, hoursElem, minElem, secElem)
