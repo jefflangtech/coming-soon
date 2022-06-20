@@ -154,8 +154,6 @@ main {
 .card-container::before {
   background-color: #FAFAFA;
   content: "";
-  /* border-top: 1px solid black; */
-  /* display: none; */
   margin: 0;
   top: -1px;
   left: 0;
