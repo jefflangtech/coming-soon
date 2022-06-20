@@ -7,7 +7,7 @@ const dateNow = Date.now()
 
 const getLaunchDate = function(now) {
   const launchDate = new Date()
-  return launchDate.setTime(now + (1000 * 60 * 60 * 24 * 1))
+  return launchDate.setTime(now + (1000 * 60 * 60 * 24 * 30))
 }
 
 const setDateHtml = function(element, date) {
